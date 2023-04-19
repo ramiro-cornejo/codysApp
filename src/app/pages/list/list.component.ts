@@ -19,7 +19,4 @@ export class ListComponent implements OnInit {
       this.cards = res;
     });
   }
-
-
-
 }

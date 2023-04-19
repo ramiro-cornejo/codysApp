@@ -1,0 +1,14 @@
+.detail-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #d5cccc;
+    margin: 2em;
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+

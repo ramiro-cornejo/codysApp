@@ -21,4 +21,10 @@ export class CardService {
       map((res: any) => res.data)
     )
   }
+
+  getCardById(id: string){
+    const params = { id };
+    return this.http.get(this.API_URL, {params})
+    .pipe(map((res: any) => res.data[0]));
+  }
 }

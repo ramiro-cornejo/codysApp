@@ -1,7 +1,7 @@
 <div class="list">
     <input class="form-control" type="text" placeholder="Buscar una carta">
     <div class="cards">
-        <app-card *ngFor="let card of cards | paginate: { itemsPerPage: 10, currentPage: page }"
+        <app-card *ngFor="let card of cards | paginate: { itemsPerPage: 12, currentPage: page }"
             [card]="card"></app-card>
     </div>
 </div>

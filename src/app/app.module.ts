@@ -10,20 +10,24 @@ import { DetailComponent } from './pages/detail/detail.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Angular Material
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MarketNamePipe } from './pipes/market-name.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
     ListComponent,
-    DetailComponent
+    DetailComponent,
+    MarketNamePipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
