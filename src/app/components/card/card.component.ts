@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { CardResponse } from 'src/app/interface/card.interface';
+import { Card } from 'src/app/interface/card.interface';
 
 @Component({
   selector: 'app-card',
@@ -7,7 +7,7 @@ import { CardResponse } from 'src/app/interface/card.interface';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit {
-  @Input() cards!: CardResponse;
+  @Input() card!: Card;
 
   constructor() {}
 

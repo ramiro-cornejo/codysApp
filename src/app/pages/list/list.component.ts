@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { CardService } from '../../services/card.service';
-import { CardResponse } from 'src/app/interface/card.interface';
+import { Card } from 'src/app/interface/card.interface';
+import { CardService } from 'src/app/services/card.service';
 
 @Component({
   selector: 'app-list',
@@ -9,7 +9,7 @@ import { CardResponse } from 'src/app/interface/card.interface';
 })
 export class ListComponent implements OnInit {
 
-  cards: CardResponse[] = [];
+  cards: Card[] = [];
   constructor(private cardService: CardService) { }
 
   ngOnInit(): void {
