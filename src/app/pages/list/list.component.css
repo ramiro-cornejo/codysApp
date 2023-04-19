@@ -7,6 +7,11 @@
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
-    gap: 0.5em;
+    gap: 1em;
     margin-top: 2em;
+}
+
+.pagination-controls {
+    padding-left: 30%;
+    padding-top: 25px;
 }

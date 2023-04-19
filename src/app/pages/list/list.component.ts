@@ -10,6 +10,7 @@ import { CardService } from 'src/app/services/card.service';
 export class ListComponent implements OnInit {
 
   cards: Card[] = [];
+  page!: number;
   constructor(private cardService: CardService) { }
 
   ngOnInit(): void {
@@ -18,5 +19,7 @@ export class ListComponent implements OnInit {
       this.cards = res;
     });
   }
+
+
 
 }
